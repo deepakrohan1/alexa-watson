@@ -8,7 +8,7 @@ var http = require('http');
 module.exports = (() => {
 
     return {
-         getData : (link_get, searchBy) => {
+         getData : (link_get) => {
              console.log('Inside Function');
             http.get(link_get, (res) => {
                 const statusCode = res.statusCode;

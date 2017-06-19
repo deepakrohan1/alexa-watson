@@ -1,0 +1,3 @@
+RecipieIntent get me the top songs
+RecipieIntent get me the latest songs
+RecipieIntent get me the latest pop
