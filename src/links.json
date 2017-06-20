@@ -1,10 +1,10 @@
 {
   "APPLE_LINKS":
     {
-      "TOP_TEN_SONGS":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/json",
-      "TOP_TEN_ALBUMS":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topalbums/limit=10/json",
-      "TOP_MOVIES":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topMovies/json",
-      "TOP_FREE_APPS":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=10/json"
+      "SONGS":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs",
+      "ALBUMS":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topalbums",
+      "MOVIES":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topMovies",
+      "APPS":"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications"
 
     }
 

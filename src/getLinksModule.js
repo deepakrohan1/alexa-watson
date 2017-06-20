@@ -7,16 +7,23 @@ let fs = require('fs');
 module.exports = (() => {
 
     return {
-         getLinksFromApple : () => {
-            fs.readFile(__dirname + "/links.json", function read(err, data) {
+         getLinksFromApple : new Promise((resolve, reject) => {
+             var jsonLinks;
+             console.log("Inside the ReadFile Method trying to read the file");
+             fs.readFile(__dirname + "/links.json", function read(err, data) {
                 if (err) {
-                    throw err;
+                    var reason = new Error("Unable to read file");
+                    reject(reason);
                 }
-                content = data;
-                var jsonLinks = JSON.parse(data);
+                //var content = data;
+                jsonLinks = JSON.parse(data);
+                console.log("Read Successfull");
                 // console.log(jsonLinks);
-                return jsonLinks;
-            });
-        }
+                // return jsonLinks;
+                 resolve(jsonLinks);
+             });
+
+
+        }),
     }
 })();

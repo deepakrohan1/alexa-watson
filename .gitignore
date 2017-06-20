@@ -1,3 +1,4 @@
 *.zip
 .idea/
 test.*
+package-lock.json
